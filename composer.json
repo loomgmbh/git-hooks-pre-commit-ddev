@@ -1,0 +1,21 @@
+{
+    "name": "loomgmbh/git-hooks-pre-commit-ddev",
+    "description": "A git-hook for pre-commit",
+    "type": "git-hook",
+    "license": "GPL-2.0+",
+    "keywords": [
+        "code sniffer",
+        "drupal",
+        "phpcs"
+    ],
+    "authors": [
+        {
+            "name": "Isaac Bigsby Trogdon",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "drupal/coder": "^8.3"
+    }
+}
