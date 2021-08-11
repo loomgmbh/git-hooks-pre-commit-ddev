@@ -41,7 +41,6 @@ $file_exts = array(
   'txt',
   'info',
   'md',
-  'yml',
 );
 
 $exit_code = 0;
@@ -106,7 +105,7 @@ foreach ($files as $file) {
 
     // Perform phpcs test.
     $return = 0;
-    $phpcs_cmd = 'cd ' . __DIR__ . '/' . $return_back . $extra . ' && ddev exec phpcbf --standard=Drupal --ignore=node_modules,bower_components,vendor --extensions=php,module,inc,install,test,profile,theme,css,js,info,txt,md,yml ' . $file;
+    $phpcs_cmd = 'cd ' . __DIR__ . '/' . $return_back . $extra . ' && ddev exec phpcbf --standard=Drupal --ignore=node_modules,bower_components,vendor --extensions=php,module,inc,install,test,profile,theme,css,js,info,txt,md ' . $file;
     exec($phpcs_cmd, $phpcs_output, $return);
     if ($return !== 0) {
       // Format error messages and set exit code.
